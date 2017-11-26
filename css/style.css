@@ -44,6 +44,10 @@ header {
     font-size: 14px;
     font-weight: 400;
 }
+.top-links a:hover{
+    color: #1ec8ca;
+    transition: 0.2s;
+}
 .first-description {
     margin-top: 80px;
   
@@ -85,11 +89,18 @@ header {
     padding: 12px 50px;
     margin-bottom: 100px;
     background: #fff;
+    transition: 0.2s;
 }
 
 .tiny-description .hire-me {
     display: block;
     margin-bottom: 50px;
+}
+
+.tiny-description .hire-me a:hover {
+    background: #1ec8ac;
+    color: white;
+    
 }
 
 
@@ -146,13 +157,17 @@ header {
      
 }
 .card .card-img::after {
-    content: ' click here';
+    content: '>';
     display: block;
     height: 90px;
     width: 197px;
-    background: yellow;
+    background: #1ec8ac54 ;
     transform: translateY(-94px);
     transition: 0.3s;
+    text-align: center;
+    line-height: 94px;
+    color: black;
+    font-size: 28px;
 }
 
 .card-img:hover::after {
