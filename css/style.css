@@ -84,12 +84,14 @@ header {
     font-weight: 300;
     padding: 12px 50px;
     margin-bottom: 100px;
+    background: #fff;
 }
 
 .tiny-description .hire-me {
     display: block;
     margin-bottom: 50px;
 }
+
 
 .title {
     font-size: 18px;
@@ -102,4 +104,27 @@ header {
     width: 24px ; 
     height: 4px;
     background: #1ec8ca;
+}
+
+.card {
+    border: 2px solid #1ec8ca;
+    height: 94px;
+    margin-top:44px;
+    background: #fff;
+    padding-top: 26px;
+    padding-left: 72px;
+}
+
+.card .card-title {
+    display: block;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+.card .card-description {
+    display: block;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 14px;
+    font-style: italic;
 }
