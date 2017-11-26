@@ -111,8 +111,9 @@ header {
     height: 94px;
     margin-top:44px;
     background: #fff;
-    padding-top: 26px;
     padding-left: 72px;
+    display: block;
+    overflow: hidden;
 }
 
 .card .card-title {
@@ -120,6 +121,7 @@ header {
     justify-content: center;
     font-weight: 700;
     font-size: 18px;
+    margin-top: 26px;
 }
 .card .card-description {
     display: block;
@@ -128,3 +130,29 @@ header {
     font-size: 14px;
     font-style: italic;
 }
+.card .title-description-container {
+    float: left;
+}
+.card .card-img{
+    width: 197px;
+    height: 90px;
+    float: right;
+    opacity: 0.8;
+    background-image: url(../img/dp2.png);
+    background-size:cover;
+     
+}
+.card .card-img::after {
+    content: ' click here';
+    display: block;
+    height: 90px;
+    width: 197px;
+    background: yellow;
+    transform: translateY(-94px);
+    transition: 0.3s;
+}
+
+.card-img:hover::after {
+    transform: translateY(0px);
+}
+
