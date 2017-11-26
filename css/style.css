@@ -15,7 +15,7 @@ body {
 }
 #particles-js{
     width: 100%;
-    height: 480px;
+    height: 100%;
     background-color: #ffffff;
     background-size: cover;
     background-position: 50% 50%;
@@ -108,12 +108,15 @@ header {
 
 .card {
     border: 2px solid #1ec8ca;
-    height: 94px;
+    height: auto;
     margin-top:44px;
     background: #fff;
     padding-left: 72px;
     display: block;
     overflow: hidden;
+}
+.card:last-child {
+    margin-bottom: 90px;
 }
 
 .card .card-title {
@@ -156,3 +159,17 @@ header {
     transform: translateY(0px);
 }
 
+.contact-banner {
+    height: 50px;
+    background: #1ec8ac;
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+.contact-banner p {
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    line-height: 50px;
+}
