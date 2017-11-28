@@ -154,24 +154,32 @@ header {
     opacity: 0.8;
     background-image: url(../img/dp2.png);
     background-size:cover;
+    transition: 0.3s;
+    overflow: hidden;
      
 }
 .card .card-img::after {
-    content: '>';
+    content: 'See More';
     display: block;
     height: 90px;
     width: 197px;
-    background: #1ec8ac54 ;
+    background: #1ec8ac98 ;
     transform: translateY(-94px);
     transition: 0.3s;
     text-align: center;
     line-height: 94px;
     color: black;
-    font-size: 28px;
+    font-size: 14px;
+    
+}
+.card .card-img:hover {
+    transform: scale(1.2);
+    overflow: hidden;
 }
 
 .card-img:hover::after {
     transform: translateY(0px);
+    
 }
 
 .contact-banner {
