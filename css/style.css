@@ -35,7 +35,8 @@ header {
 }
 .top-links {
     padding-top: 25px;
-    float: right;
+    /*float: right;*/
+    text-align: center;
 }
 .top-links a {
     text-decoration: none ; 
@@ -43,6 +44,7 @@ header {
     margin-left: 63px;
     font-size: 14px;
     font-weight: 400;
+    
 }
 .top-links a:hover{
     color: #1ec8ca;
@@ -55,9 +57,9 @@ header {
 .full-description {
     margin-top: 13px;
     font-size: 18px; 
-    font-weight: 300i;
+    font-weight: 400;
     font-style: italic;
-    text-align: right
+    text-align: right;
 }
 
 .tiny-description h2{
@@ -122,7 +124,7 @@ header {
     height: auto;
     margin-top:44px;
     background: #fff;
-    padding-left: 72px;
+    /*padding-left: 72px;*/
     display: block;
     overflow: hidden;
 }
@@ -136,6 +138,7 @@ header {
     font-weight: 700;
     font-size: 18px;
     margin-top: 26px;
+   /* margin-left: 72px;*/
 }
 .card .card-description {
     display: block;
@@ -143,9 +146,14 @@ header {
     font-weight: 300;
     font-size: 14px;
     font-style: italic;
+    margin-bottom: 20px;
+    /*margin-left: 72px;*/
+    margin-top: 6px;
 }
 .card .title-description-container {
-    float: left;
+    float:left;
+    padding-left: 72px;
+    width: auto;
 }
 .card .card-img{
     width: 197px;
@@ -158,6 +166,7 @@ header {
     overflow: hidden;
      
 }
+
 .card .card-img::after {
     content: 'See More';
     display: block;
@@ -183,10 +192,11 @@ header {
 }
 
 .contact-banner {
-    height: 50px;
+   /* height: 50px;*/
     background: #1ec8ac;
     margin-top: 90px;
     margin-bottom: 100px;
+    padding: 0 3px;
 }
 .contact-banner p {
     color: white;
@@ -195,4 +205,53 @@ header {
     font-weight: 300;
     text-align: center;
     line-height: 50px;
+}
+
+@media screen and (max-width : 430px) {
+    .full-description {
+        font-size: 18px; 
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .first-section .first-description .tiny-description h2{
+        font-size: 38px ;
+        font-weight: 800;
+    }
+
+}
+
+@media screen and (max-width : 845px) {
+    .card {
+        height: auto;    
+    }
+    .card .title-description-container .card-title {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .card .title-description-container .card-description {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .card .title-description-container {
+        padding-left: 5px;
+        padding-right:5px;
+        float: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .card:last-child {
+        margin-bottom : 20px;
+    }
+    .card a {
+        text-decoration: none;
+    }
+    .card .card-img {
+        margin: 10px auto 20px auto;
+        width: 250px;
+        float: none;
+        border: 2px solid #1ec8ac ;
+    }
+    .card .card-img:after {
+        width: auto;
+    }
 }
